@@ -1,0 +1,253 @@
+.ManyCvs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: 4%;
+  margin-bottom: 2%;
+  max-height: unset;
+  width: 92%; 
+}
+
+
+.removeBtn {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding:8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+  
+.removeBtn:hover {
+    background-color: #d32f2f;
+}
+  
+.jobCards {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 2rem;
+    width: 40%;
+    max-width: 600px;
+    justify-content: space-between;
+}
+.CV-card,.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 300px;
+}
+  
+.CV-card,.description label {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+  
+input[type="file"],textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-top:2%;
+    margin-bottom:2%;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+  
+input[type="file"] {
+    background-color: #fff7e6;
+    border: 1px solid #facc15; 
+}
+  
+
+button {
+    background-color: #f59e0b; 
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #d97706;
+}
+  
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
+  
+.btnSection {
+    display: flex;
+}
+.results {
+    margin-top: 2rem;
+    position:relative;
+    left:19%;
+
+    
+}
+.results h3{
+    font-size: 40px;
+    text-align: center;
+    margin-left:10%;
+  
+}
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff7e6;
+    border: 1px solid #facc15;
+    border-radius: 8px;
+    padding: 3rem;
+  
+} 
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+  
+.feedback-table thead {
+    background-color: #fcd34d;
+}
+  
+.feedback-table th,.feedback-table td {
+    padding: 2rem 2rem;
+    border: 1px solid #facc15;
+    text-align: left;
+    line-height: 1.5rem;
+    vertical-align: top;
+}
+  
+.feedback-table a {
+    color: #d97706;
+    text-decoration: underline;
+}
+  
+.feedback-table ul {
+  padding-left: 1rem;
+    margin: 0;
+}
+.dot-loader {
+    position: relative; 
+    left: 60%;  
+    top:-20%;         
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.dot-loader span {
+    width: 12px;
+    height: 12px;
+    background-color: #ffc107; 
+    animation: bounce 0.6s infinite ease-in-out;
+}
+  
+.dot-loader span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot-loader span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 8px;
+    
+}
+.parameters{
+    margin-top:2%;
+    margin-bottom:2%;
+}
+.parameters label {
+    font-size:20px;
+    margin-bottom:2px;
+}
+ 
+.table-container {
+  margin-top:-33%;
+  margin-left:-3%;
+  gap:5px;
+}
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.feedback-table th,.feedback-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+.cutoff-box {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.cutoff-section {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  background-color: #fff7e6;
+  border: 1px solid #facc15;
+  padding: 1.5rem;
+  border-radius: 7px;
+  position: relative;
+  left: 120%;
+
+ 
+}
+
+.cutoff-section input[type="range"], .cutoff-section button {
+  width: 100%;
+}
+
+.cutoff-number {
+    width: 60px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom:5%;
+    margin-top:5%;
+    font-size:20px;
+}
+  
+.cutoff-percent {
+    font-weight: bold;
+    margin-left:2%;
+    font-size:20px;
+}
+.paraHeading {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}

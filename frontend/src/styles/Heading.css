@@ -1,0 +1,12 @@
+.Heading {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    width: auto;            
+    padding: 10px;           
+  }
+  
+  .Heading h3 {
+    font-size: 30px;
+  }
+  
