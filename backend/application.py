@@ -1,4 +1,3 @@
-import openai
 from openai import OpenAI
 from flask import Flask, request, jsonify
 import PyPDF2
@@ -15,7 +14,7 @@ import time
 load_dotenv()  # Load environment variables from .env
 
 # OpenAI client setup
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI()
 
 application = Flask(__name__)
 CORS(application, origins=["http://localhost:3570"])  # Allow frontend to connect
@@ -94,11 +93,8 @@ Only respond with the JSON object. If a course URL is not available for a missin
         ]
 
         # Send request to OpenAI
-        response = openai.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages,
-            max_tokens=600,
-            temperature=0.7
+        response = client.chat.completions.create(
+            model="gpt-4o-mini", messages=messages
         )
 
         # Extract raw response from GPT
